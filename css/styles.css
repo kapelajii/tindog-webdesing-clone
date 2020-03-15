@@ -1,0 +1,152 @@
+/*  Styles.css */
+
+body {
+    font-family: 'Ubuntu';
+    text-align: center;
+  }
+  /* all heading after refactoring */
+  h1,h2,h3{
+    font-family: sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+  
+  /* ################## ##################  */
+  .big-heading{
+    font-family: 'Sedgwick Ave', cursive; 
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: left;
+    color: #8f8f8f;
+    font-family: sans-serif;
+    font-weight: lighter;
+   }
+  
+  
+  #title {
+    text-align: left;
+  }
+  
+  .container-fluid {
+    padding: 3% 15%;
+  }
+  
+  /* Sections */
+  
+  .colored-section{
+    /*background-color: #56a0d3; */
+    background-color:  #85B2C9; /*Univerals robots skyblue */
+    color: white;
+  }
+  .white-section{
+    /*background-color: #fff; */
+    background-color: #303030;
+  }
+  
+  /* navigation bar */
+  .navbar{
+    padding: 0 0 4.5rem;
+  }
+  .navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .nav-item{
+    padding: 0px 18px;
+    text-align: right;  
+  }
+  .nav-link{
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+  
+  /* Download buttons */
+  .download-buttons{
+    margin: 5% 3% 5% 0%;
+    font-size: 1rem;
+  }
+  
+  /* title-image */
+  .title-image{
+    width: 30%;
+    transform: rotate(0deg);
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
+  /* z index is used give z dimension to the image and it requires pos element to do that  */
+  /* if we don't use z index and pos element then the images or divs folloow the natural stacking order */
+  
+  
+  /* Robot cards section  */
+  .container{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+ 
+
+  #robot-cards{
+    padding: 0px;
+  }
+  .card-col{
+    padding: 3% 2%;
+  }
+  .card-title{
+    text-align: center;
+  }
+ 
+  .card-text{
+      color: #8f8f8f;
+      font-family: sans-serif;
+      font-weight: lighter;
+    }
+
+  .robot-mode{
+    color: green;
+  }
+
+  .robot-safety-mode{
+    color: green;
+  }
+ 
+  .chi-labra{
+    margin-bottom: 32px;
+  }
+  .the-shadow{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Using media query for making our website responsive */
+  
+  @media (max-width: 1028px){
+    #title{
+      text-align: center;
+    }
+    .title-image{
+      position: static;
+      transform: rotate(0);
+    }
+  
+  }
+  
+  /* cta section */
+  
+  #last-section{
+    font-size: 2.5rem;
+    font-family: 'Ubuntu';
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.5;
+  }
+  /* footer section */
+  
+  .a{
+    color: black;
+  }
